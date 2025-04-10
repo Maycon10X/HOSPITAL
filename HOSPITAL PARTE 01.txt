@@ -1,0 +1,29 @@
+|Médico| -    Antônio - Especialista
+Especial:     Pediatria
+CPF:          233.532.335-45 
+CEP:          033463-100, string
+_____________________________________________________________
+|Pacientes| - Maycon 
+Nascimento:   05/12/2010
+Endereço:     Rua Almirante Brasil-35, 
+Tel:          (11) 98949-2135
+Email:        maycon345santos20@gmail.com
+CPF:          459.765.876-45
+ConvMedico:   Amil Saúde
+CNPJ:         29.309.127/0001-79<>24horas
+_____________________________________________________________
+Consulta:    Pediatria
+Responsável: Maria
+Local:       Hospital Albert Einsten
+Agendamento: 14/03/2010 - 14h35
+Médico:      Antônio\Pediatra
+Paciente:    Maycon Ryan 
+Valor:       R$ 345,00
+Convênio:    Amil Saúde - 2344564-45
+_____________________________________________________________
+Orientações: Médico-Antônio
+Remédio:     Dipirona
+Instruções:  Beber bastente água e tomar dipirona até a dor
+passar.
+
+
