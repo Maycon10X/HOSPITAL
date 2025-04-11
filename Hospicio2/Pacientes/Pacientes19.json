@@ -1,0 +1,33 @@
+[
+  {
+    "nome": "Rodrigo Almeida",
+    "data_nascimento": "1990-06-18",
+    "endereco": {
+      "logradouro": "Avenida das Pedras",
+      "numero": "300",
+      "bairro": "Vila das Flores",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "567893-210"
+    },
+    "contato": {
+      "telefone": "113456789",
+      "email": "rodrigo.almeida@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11976543211",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2026-01-05",
+      "CNPJ": "12345678901",
+      "carencia": 40
+    },
+    "documentos": {
+      "CPF": "89012345676",
+      "RG": "SP987654",
+      "SUS": "58392750939485"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+{
+  "nome": "Patrícia Mendes",
+  "data_nascimento": "1977-01-30",
+  "endereco": {
+    "logradouro": "Rua das Acácias",
+    "numero": "45",
+    "bairro": "Parque Verde",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "CEP": "876543-210"
+  },
+  "contato": {
+    "telefone": "116543789",
+    "email": "patricia.mendes@gmail.com"
+  },
+  "subcontato01": {
+    "telefone": "1195432187",
+    "whatssapp": true
+  },
+  "convenio": {
+    "nome": "Bradesco Seguro",
+    "validade": "2025-10-05",
+    "CNPJ": "97812345609",
+    "carencia": 40
+  },
+  "documentos": {
+    "CPF": "56789012345",
+    "RG": "SP567890",
+    "SUS": "48293750938475"
+  }
+}
+  ]
