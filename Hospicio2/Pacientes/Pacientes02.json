@@ -1,0 +1,33 @@
+[
+  {
+    "nome": "Gabriel Borges",
+    "data_nascimento": "2003-04-02",
+    "endereco": {
+      "logradouro": " Avenida Frederico",
+      "numero": "50",
+      "bairro": "Jardin Cetro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "11122-100"
+    },
+    "contato": {
+      "telefone": "11351273531",
+      "email": "borgesalves@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "113454435453",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "BradescoSaúde",
+      "validade": "2024-12-31",
+      "CNPJ": "32435276263",
+      "carencia": 30
+    },
+    "documentos": {
+      "CPF": "81384012818",
+      "RG": "SP13465",
+      "SUS": "34574635632324523"
+    }
+  }
+]
