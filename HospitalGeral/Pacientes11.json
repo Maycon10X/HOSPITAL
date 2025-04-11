@@ -1,0 +1,33 @@
+[
+{
+  "nome": "Aline Souza",
+  "data_nascimento": "1990-12-01",
+  "endereco": {
+    "logradouro": "Avenida das Palmeiras",
+    "numero": "712",
+    "bairro": "Jardim Azul",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "CEP": "234567-890"
+  },
+  "contato": {
+    "telefone": "113456789",
+    "email": "aline.souza@gmail.com"
+  },
+  "subcontato01": {
+    "telefone": "1198765432",
+    "whatssapp": true
+  },
+  "convenio": {
+    "nome": "Amil Saúde",
+    "validade": "2025-11-30",
+    "CNPJ": "78912345678",
+    "carencia": 45
+  },
+  "documentos": {
+    "CPF": "67891234509",
+    "RG": "SP345678",
+    "SUS": "48392759834728"
+  }
+}
+  ]
