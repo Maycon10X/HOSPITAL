@@ -1,0 +1,614 @@
+[
+  {
+    "_id_medico": "SP00001",
+    "_id_pac": 1,
+    "_id_consulta": "1",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2026-06-14",
+      "carencia": 90,
+      "valor": "200.00"
+    },
+    "data": "2016-05-10",
+    "hora": "10:00",
+    "local": "Sala 101",
+    "motivoConsulta": "Dor abdominal",
+    "diagnostico": "Gastrite",
+    "tratamento": "Omeprazol 20mg, 1x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2016-05-10",
+      "peso": "70kg",
+      "altura": "1.75m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.5°C",
+      "frequencia_cardiaca": "72 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de gastrite.",
+      "tratamento": {
+        "medicamento": [
+          "Omeprazol",
+          "Domperidona"
+        ],
+        "doses": [
+          "20mg, 1x ao dia",
+          "10mg, 3x ao dia"
+        ]
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00002",
+    "_id_pac": 2,
+    "_id_consulta": "2",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2025-11-30",
+      "carencia": 45,
+      "valor": "250.00"
+    },
+    "data": "2016-03-15",
+    "hora": "14:00",
+    "local": "Sala 202",
+    "motivoConsulta": "Febre persistente",
+    "diagnostico": "Infecção viral",
+    "tratamento": "Paracetamol 500mg, 3x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2016-03-15",
+      "peso": "60kg",
+      "altura": "1.65m",
+      "pressao_arterial": "110/70",
+      "temperatura": "38.2°C",
+      "frequencia_cardiaca": "80 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente com febre e sintomas gripais.",
+      "tratamento": {
+        "medicamento": [
+          "Paracetamol",
+          "Vitamina C"
+        ],
+        "doses": [
+          "500mg, 3x ao dia",
+          "1g, 1x ao dia"
+        ]
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00003",
+    "_id_pac": 3,
+    "_id_consulta": "3",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-09-20",
+      "carencia": 30,
+      "valor": "180.00"
+    },
+    "data": "2017-07-20",
+    "hora": "09:00",
+    "local": "Sala 303",
+    "motivoConsulta": "Dor nas costas",
+    "diagnostico": "Hérnia de disco",
+    "tratamento": "Fisioterapia e analgésicos",
+    "DadosPaciente": {
+      "data_mediçao": "2017-07-20",
+      "peso": "85kg",
+      "altura": "1.80m",
+      "pressao_arterial": "130/85",
+      "temperatura": "36.7°C",
+      "frequencia_cardiaca": "75 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de hérnia de disco lombar.",
+      "tratamento": {
+        "medicamento": [
+          "Ibuprofeno",
+          "Diazepam"
+        ],
+        "doses": [
+          "600mg, 2x ao dia",
+          "5mg, 1x ao dia"
+        ]
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00004",
+    "_id_pac": 4,
+    "_id_consulta": "4",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-04-10",
+      "carencia": 60,
+      "valor": "220.00"
+    },
+    "data": "2018-01-12",
+    "hora": "11:00",
+    "local": "Sala 404",
+    "motivoConsulta": "Manchas na pele",
+    "diagnostico": "Dermatite atópica",
+    "tratamento": "Hidrocortisona tópica",
+    "DadosPaciente": {
+      "data_mediçao": "2018-01-12",
+      "peso": "55kg",
+      "altura": "1.60m",
+      "pressao_arterial": "115/75",
+      "temperatura": "36.4°C",
+      "frequencia_cardiaca": "70 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta dermatite atópica em estágio leve.",
+      "tratamento": {
+        "medicamento": "Hidrocortisona",
+        "doses": "Aplicar 2x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00008",
+    "_id_pac": 14,
+    "_id_consulta": "5",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-03-20",
+      "carencia": 45,
+      "valor": "230.00"
+    },
+    "data": "2019-10-05",
+    "hora": "10:30",
+    "local": "Sala 105",
+    "motivoConsulta": "Dor de cabeça frequente",
+    "diagnostico": "Enxaqueca",
+    "tratamento": "Sumatriptano 50mg, 1x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2019-10-05",
+      "peso": "62kg",
+      "altura": "1.68m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.6°C",
+      "frequencia_cardiaca": "72 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de enxaqueca crônica.",
+      "tratamento": {
+        "medicamento": "Sumatriptano",
+        "doses": "50mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00010",
+    "_id_pac": 7,
+    "_id_consulta": "6",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-02-15",
+      "carencia": 60,
+      "valor": "240.00"
+    },
+    "data": "2015-10-06",
+    "hora": "09:00",
+    "local": "Sala 106",
+    "motivoConsulta": "Tosse persistente",
+    "diagnostico": "Bronquite",
+    "tratamento": "Salbutamol inalatório, 2x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2015-10-06",
+      "peso": "58kg",
+      "altura": "1.65m",
+      "pressao_arterial": "118/76",
+      "temperatura": "37.0°C",
+      "frequencia_cardiaca": "78 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de bronquite leve.",
+      "tratamento": {
+        "medicamento": "Salbutamol",
+        "doses": "Inalação 2x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00012",
+    "_id_pac": 8,
+    "_id_consulta": "7",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-12-01",
+      "carencia": 30,
+      "valor": "210.00"
+    },
+    "data": "2019-12-01",
+    "hora": "15:00",
+    "local": "Sala 207",
+    "motivoConsulta": "Dor no peito",
+    "diagnostico": "Angina estável",
+    "tratamento": "Nitroglicerina sublingual, conforme necessário",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-01",
+      "peso": "75kg",
+      "altura": "1.78m",
+      "pressao_arterial": "135/85",
+      "temperatura": "36.8°C",
+      "frequencia_cardiaca": "80 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de angina estável.",
+      "tratamento": {
+        "medicamento": "Nitroglicerina",
+        "doses": "Sublingual conforme necessário"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00013",
+    "_id_pac": 9,
+    "_id_consulta": "8",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2025-12-12",
+      "carencia": 30,
+      "valor": "200.00"
+    },
+    "data": "2019-11-30",
+    "hora": "10:00",
+    "local": "Sala 108",
+    "motivoConsulta": "Fadiga crônica",
+    "diagnostico": "Anemia",
+    "tratamento": "Suplementação de ferro",
+    "DadosPaciente": {
+      "data_mediçao": "2019-11-30",
+      "peso": "68kg",
+      "altura": "1.70m",
+      "pressao_arterial": "110/70",
+      "temperatura": "36.5°C",
+      "frequencia_cardiaca": "75 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de anemia leve.",
+      "tratamento": {
+        "medicamento": "Sulfato ferroso",
+        "doses": "325mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00014",
+    "_id_pac": 10,
+    "_id_consulta": "9",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2026-01-05",
+      "carencia": 40,
+      "valor": "220.00"
+    },
+    "data": "2019-12-15",
+    "hora": "11:30",
+    "local": "Sala 109",
+    "motivoConsulta": "Dores articulares",
+    "diagnostico": "Artrite reumatoide",
+    "tratamento": "Anti-inflamatórios e fisioterapia",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-15",
+      "peso": "72kg",
+      "altura": "1.75m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.6°C",
+      "frequencia_cardiaca": "78 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de artrite reumatoide.",
+      "tratamento": {
+        "medicamento": "Ibuprofeno",
+        "doses": "400mg, 2x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00015",
+    "_id_pac": 11,
+    "_id_consulta": "10",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2025-11-22",
+      "carencia": 50,
+      "valor": "230.00"
+    },
+    "data": "2019-12-20",
+    "hora": "09:00",
+    "local": "Sala 110",
+    "motivoConsulta": "Alergia respiratória",
+    "diagnostico": "Rinite alérgica",
+    "tratamento": "Antialérgicos e descongestionantes",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-20",
+      "peso": "60kg",
+      "altura": "1.65m",
+      "pressao_arterial": "115/75",
+      "temperatura": "36.4°C",
+      "frequencia_cardiaca": "72 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de rinite alérgica.",
+      "tratamento": {
+        "medicamento": "Loratadina",
+        "doses": "10mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00016",
+    "_id_pac": 12,
+    "_id_consulta": "11",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-08-10",
+      "carencia": 60,
+      "valor": "250.00"
+    },
+    "data": "2019-12-25",
+    "hora": "14:00",
+    "local": "Sala 111",
+    "motivoConsulta": "Glicemia elevada",
+    "diagnostico": "Diabetes tipo 2",
+    "tratamento": "Controle glicêmico e insulina",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-25",
+      "peso": "80kg",
+      "altura": "1.78m",
+      "pressao_arterial": "130/85",
+      "temperatura": "36.7°C",
+      "frequencia_cardiaca": "76 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de diabetes tipo 2.",
+      "tratamento": {
+        "medicamento": "Insulina",
+        "doses": "Conforme prescrição médica"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00017",
+    "_id_pac": 13,
+    "_id_consulta": "12",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-11-30",
+      "carencia": 30,
+      "valor": "200.00"
+    },
+    "data": "2019-12-30",
+    "hora": "10:00",
+    "local": "Sala 112",
+    "motivoConsulta": "Dor de garganta",
+    "diagnostico": "Amigdalite",
+    "tratamento": "Antibióticos e analgésicos",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-30",
+      "peso": "78kg",
+      "altura": "1.80m",
+      "pressao_arterial": "120/80",
+      "temperatura": "38.0°C",
+      "frequencia_cardiaca": "80 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de amigdalite bacteriana.",
+      "tratamento": {
+        "medicamento": "Amoxicilina",
+        "doses": "500mg, 3x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00018",
+    "_id_pac": 14,
+    "_id_consulta": "13",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-03-20",
+      "carencia": 45,
+      "valor": "230.00"
+    },
+    "data": "2019-12-31",
+    "hora": "11:00",
+    "local": "Sala 113",
+    "motivoConsulta": "Dor abdominal",
+    "diagnostico": "Gastrite",
+    "tratamento": "Omeprazol 20mg, 1x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-31",
+      "peso": "65kg",
+      "altura": "1.70m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.5°C",
+      "frequencia_cardiaca": "72 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de gastrite.",
+      "tratamento": {
+        "medicamento": "Omeprazol",
+        "doses": "20mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00001",
+    "_id_pac": 15,
+    "_id_consulta": "14",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-09-15",
+      "carencia": 40,
+      "valor": "210.00"
+    },
+    "data": "2019-11-15",
+    "hora": "09:30",
+    "local": "Sala 114",
+    "motivoConsulta": "Tontura frequente",
+    "diagnostico": "Hipotensão ortostática",
+    "tratamento": "Aumento da ingestão de líquidos e sal",
+    "DadosPaciente": {
+      "data_mediçao": "2019-11-15",
+      "peso": "70kg",
+      "altura": "1.68m",
+      "pressao_arterial": "90/60",
+      "temperatura": "36.4°C",
+      "frequencia_cardiaca": "70 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de hipotensão ortostática.",
+      "tratamento": {
+        "medicamento": "Nenhum",
+        "doses": "Apenas medidas dietéticas"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00002",
+    "_id_pac": 16,
+    "_id_consulta": "15",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-05-25",
+      "carencia": 60,
+      "valor": "240.00"
+    },
+    "data": "2019-11-20",
+    "hora": "14:30",
+    "local": "Sala 115",
+    "motivoConsulta": "Falta de ar",
+    "diagnostico": "Asma",
+    "tratamento": "Salbutamol inalatório, conforme necessário",
+    "DadosPaciente": {
+      "data_mediçao": "2019-11-20",
+      "peso": "68kg",
+      "altura": "1.72m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.5°C",
+      "frequencia_cardiaca": "75 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de asma leve.",
+      "tratamento": {
+        "medicamento": "Salbutamol",
+        "doses": "Inalação conforme necessário"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00003",
+    "_id_pac": 17,
+    "_id_consulta": "16",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-08-30",
+      "carencia": 30,
+      "valor": "200.00"
+    },
+    "data": "2019-11-25",
+    "hora": "10:00",
+    "local": "Sala 116",
+    "motivoConsulta": "Azia frequente",
+    "diagnostico": "Refluxo gastroesofágico",
+    "tratamento": "Omeprazol 20mg, 1x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2019-11-25",
+      "peso": "75kg",
+      "altura": "1.75m",
+      "pressao_arterial": "120/80",
+      "temperatura": "36.5°C",
+      "frequencia_cardiaca": "72 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de refluxo gastroesofágico.",
+      "tratamento": {
+        "medicamento": "Omeprazol",
+        "doses": "20mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00004",
+    "_id_pac": 18,
+    "_id_consulta": "17",
+    "convenio": {
+      "Nome": "Amil Saúde",
+      "CNPJ": "22222",
+      "validade": "2026-04-12",
+      "carencia": 45,
+      "valor": "230.00"
+    },
+    "data": "2019-11-30",
+    "hora": "11:00",
+    "local": "Sala 117",
+    "motivoConsulta": "Dor lombar",
+    "diagnostico": "Contratura muscular",
+    "tratamento": "Fisioterapia e relaxantes musculares",
+    "DadosPaciente": {
+      "data_mediçao": "2019-11-30",
+      "peso": "80kg",
+      "altura": "1.80m",
+      "pressao_arterial": "125/85",
+      "temperatura": "36.6°C",
+      "frequencia_cardiaca": "74 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de contratura muscular lombar.",
+      "tratamento": {
+        "medicamento": "Ciclobenzaprina",
+        "doses": "10mg, 1x ao dia"
+      }
+    }
+  },
+  {
+    "_id_medico": "SP00005",
+    "_id_pac": 19,
+    "_id_consulta": "18",
+    "convenio": {
+      "Nome": "Bradesco Seguro",
+      "CNPJ": "11111",
+      "validade": "2025-10-10",
+      "carencia": 40,
+      "valor": "220.00"
+    },
+    "data": "2019-12-05",
+    "hora": "09:00",
+    "local": "Sala 118",
+    "motivoConsulta": "Pressão alta",
+    "diagnostico": "Hipertensão arterial",
+    "tratamento": "Losartana 50mg, 1x ao dia",
+    "DadosPaciente": {
+      "data_mediçao": "2019-12-05",
+      "peso": "85kg",
+      "altura": "1.78m",
+      "pressao_arterial": "140/90",
+      "temperatura": "36.7°C",
+      "frequencia_cardiaca": "80 bpm"
+    },
+    "observacoes": {
+      "diagnostico": "Paciente apresenta sinais de hipertensão arterial.",
+      "tratamento": {
+        "medicamento": "Losartana",
+        "doses": "50mg, 1x ao dia"
+      }
+    }
+  }
+]

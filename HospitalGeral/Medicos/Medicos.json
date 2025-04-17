@@ -1,0 +1,773 @@
+[
+  {
+    "_id_medico": "SP00001",
+    "em_atividade": true,
+    "nome": "DR. João De Almeida",
+    "sexo": "Masculino",
+    "data_nascimento": "1980-06-16",
+    "especialidades": [
+      "Clínica geral",
+      "Dermatologia",
+      "Ortopedia"
+    ],
+    "tipo": "Generalista",
+    "contato": {
+      "telefone": "11 94566-1011",
+      "email": "jaosaude@hospital.com"
+    },
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5007699553",
+      "rg": "456789044",
+      "crm": "SP00001"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "terça-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00002",
+    "em_atividade": true,
+    "nome": "DRA. Maria Clara Silva",
+    "sexo": "Feminino",
+    "data_nascimento": "1985-03-22",
+    "especialidades": [
+      "Pediatria",
+      "Cardiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 93422-7654",
+        "email": "mariaclara@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5007699554",
+      "rg": "456789045",
+      "digito": "4",
+      "crm": "SP00002"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "terça-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00003",
+    "em_atividade": true,
+    "nome": "DR. Marcos Aurélio",
+    "sexo": "Masculino",
+    "data_nascimento": "1990-01-12",
+    "especialidades": [
+      "Radiologia",
+      "Gastroenterologia",
+      "Clínica geral"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90022-1111",
+        "email": "aureliodoutor@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2425531092",
+      "rg": "299803456",
+      "digito": "5",
+      "crm": "SP00003"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "terça-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00004",
+    "em_atividade": true,
+    "nome": "DRA. Vanessa Imperatriz",
+    "sexo": "Feminino",
+    "data_nascimento": "1980-12-25",
+    "especialidades": [
+      "Dermatologia",
+      "Radiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 99987-2525",
+        "email": "vanessaimperatriz02@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4034455898",
+      "rg": "787065766",
+      "digito": "3",
+      "crm": "SP00004"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00005",
+    "em_atividade": true,
+    "nome": "DR. Albert Einstein",
+    "sexo": "Masculino",
+    "data_nascimento": "1976-03-20",
+    "especialidades": [
+      "Gastroenterologia",
+      "Cardiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 91455-0007",
+        "email": "einsteinalbert007@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4557799032",
+      "rg": "102550612",
+      "digito": "4",
+      "crm": "SP00005"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00006",
+    "em_atividade": true,
+    "nome": "DRA. Márcia Gonçalves",
+    "sexo": "Feminino",
+    "data_nascimento": "1986-06-25",
+    "especialidades": [
+      "Ortopedia",
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 91687-6027",
+        "email": "marciagoncalves22@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "1074433217",
+      "rg": "799876432",
+      "digito": "6",
+      "crm": "SP00006"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00007",
+    "em_atividade": true,
+    "nome": "DR. Gabriel Alvez Borges",
+    "sexo": "Masculino",
+    "data_nascimento": "1970-10-24",
+    "especialidades": [
+      "Dermatologia",
+      "Radiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 92222-9067",
+        "email": "gabssaude@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "5667980235",
+      "rg": "122544678",
+      "digito": "9",
+      "crm": "SP00007"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00008",
+    "em_atividade": true,
+    "nome": "DRA. Carolina Moura",
+    "sexo": "Feminino",
+    "data_nascimento": "1985-08-10",
+    "especialidades": [
+      "Pediatria",
+      "Cardiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 93456-7788",
+        "email": "carolinamoura@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2345681200",
+      "rg": "324567891",
+      "digito": "2",
+      "crm": "SP00008"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00009",
+    "em_atividade": true,
+    "nome": "DR. Bruno Cavalcanti",
+    "sexo": "Masculino",
+    "data_nascimento": "1979-11-22",
+    "especialidades": [
+      "Gastroenterologia",
+      "Ortopedia",
+      "Dermatologia"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90012-2233",
+        "email": "brunoneuro@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2234567890",
+      "rg": "443567891",
+      "digito": "7",
+      "crm": "SP00009"
+    },
+    "plantao": [
+      {
+        "dia": "quarta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "23:00",
+        "saida": "07:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00010",
+    "em_atividade": true,
+    "nome": "DRA. Helena Ramos",
+    "sexo": "Feminino",
+    "data_nascimento": "1992-05-13",
+    "especialidades": [
+      "Radiologia",
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 94567-8890",
+        "email": "helenaramos@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "1123456789",
+      "rg": "224567891",
+      "digito": "5",
+      "crm": "SP00010"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00011",
+    "em_atividade": false,
+    "nome": "DR. Eduardo Lima",
+    "sexo": "Masculino",
+    "data_nascimento": "1983-03-04",
+    "especialidades": [
+      "Cardiologia",
+      "Dermatologia",
+      "Clínica geral"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 99887-6655",
+        "email": "eduardocirurgiao@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "3345678901",
+      "rg": "113456782",
+      "digito": "8",
+      "crm": "SP00011"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00012",
+    "em_atividade": true,
+    "nome": "DRA. Fernanda Azevedo",
+    "sexo": "Feminino",
+    "data_nascimento": "1978-02-17",
+    "especialidades": [
+      "Gastroenterologia",
+      "Radiologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 98765-4321",
+        "email": "fernandaa@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4456789012",
+      "rg": "567890123",
+      "digito": "3",
+      "crm": "SP00012"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "23:00",
+        "saida": "07:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00013",
+    "em_atividade": false,
+    "nome": "DR. Ricardo Vasconcelos",
+    "sexo": "Masculino",
+    "data_nascimento": "1990-07-09",
+    "especialidades": [
+      "Ortopedia",
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 90098-1122",
+        "email": "ricardotraumato@hospital.com"
+      }
+    ],
+    "status_medico": 0,
+    "documentos": {
+      "cpf": "5567890123",
+      "rg": "678901234",
+      "digito": "6",
+      "crm": "SP00013"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00014",
+    "em_atividade": true,
+    "nome": "DR. Sofia Menezes",
+    "sexo": "Feminino",
+    "data_nascimento": "1985-03-22",
+    "especialidades": [
+      "Cardiologia",
+      "Radiologia",
+      "Gastroenterologia"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 94455-6677",
+        "email": "sofia.menezes@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "6789012345",
+      "rg": "789012345",
+      "digito": "3",
+      "crm": "SP00014"
+    },
+    "plantao": [
+      {
+        "dia": "domingo",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "sexta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00015",
+    "em_atividade": true,
+    "nome": "DR. Lucas Andrade",
+    "sexo": "Masculino",
+    "data_nascimento": "1995-01-15",
+    "especialidades": [
+      "Pediatria",
+      "Clínica geral",
+      "Ortopedia"
+    ],
+    "tipo": "Generalista",
+    "contato": [
+      {
+        "telefone": "11 91234-5678",
+        "email": "lucas.andrade@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "1234567890",
+      "rg": "987654321",
+      "digito": "1",
+      "crm": "SP00015"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quarta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00016",
+    "em_atividade": true,
+    "nome": "DRA. Ana Beatriz",
+    "sexo": "Feminino",
+    "data_nascimento": "1993-04-10",
+    "especialidades": [
+      "Radiologia",
+      "Dermatologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 92345-6789",
+        "email": "ana.beatriz@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "2345678901",
+      "rg": "876543210",
+      "digito": "2",
+      "crm": "SP00016"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "15:00",
+        "saida": "23:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "15:00",
+        "saida": "23:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00017",
+    "em_atividade": true,
+    "nome": "DR. Felipe Costa",
+    "sexo": "Masculino",
+    "data_nascimento": "1994-07-20",
+    "especialidades": [
+      "Cardiologia",
+      "Gastroenterologia",
+      "Clínica geral"
+    ],
+    "tipo": "Especialista",
+    "contato": [
+      {
+        "telefone": "11 93456-7890",
+        "email": "felipe.costa@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "3456789012",
+      "rg": "765432109",
+      "digito": "3",
+      "crm": "SP00017"
+    },
+    "plantao": [
+      {
+        "dia": "segunda-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "23:00",
+        "saida": "07:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "23:00",
+        "saida": "07:00"
+      }
+    ]
+  },
+  {
+    "_id_medico": "SP00018",
+    "em_atividade": true,
+    "nome": "DRA. Camila Rocha",
+    "sexo": "Feminino",
+    "data_nascimento": "1996-11-05",
+    "especialidades": [
+      "Ortopedia",
+      "Pediatria",
+      "Clínica geral"
+    ],
+    "tipo": "Residente",
+    "contato": [
+      {
+        "telefone": "11 94567-8901",
+        "email": "camila.rocha@hospital.com"
+      }
+    ],
+    "status_medico": 1,
+    "documentos": {
+      "cpf": "4567890123",
+      "rg": "654321098",
+      "digito": "4",
+      "crm": "SP00018"
+    },
+    "plantao": [
+      {
+        "dia": "terça-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "quinta-feira",
+        "entrada": "07:00",
+        "saida": "15:00"
+      },
+      {
+        "dia": "sábado",
+        "entrada": "07:00",
+        "saida": "15:00"
+      }
+    ]
+  }
+]

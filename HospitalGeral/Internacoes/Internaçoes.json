@@ -1,0 +1,120 @@
+[
+  {
+    "id_internacao": 1,
+    "tipo_de_quarto": "Apartamento",
+    "valor": "R$ 499,00",
+    "data_internacao": "2015-01-01",
+    "data_alta": "",
+    "motivo_internacao": "Pós cirurgia",
+    "medico_responsavel": "SP00007",
+    "enfermeiro_responsavel": "",
+    "enfermeiro_responsavel2": "",
+    "paciente_id": 4
+  },
+  {
+    "id_internacao": 2,
+    "tipo_de_quarto": "Enfermaria",
+    "valor": "Gratuito",
+    "data_internacao": "2016-02-01",
+    "data_alta": "",
+    "motivo_internacao": "Acompanhamento",
+    "medico_responsavel": "SP00001",
+    "enfermeiro_responsavel": "Enfermeiro 2",
+    "paciente_id": 1
+  },
+  {
+    "id_internacao": 3,
+    "tipo_de_quarto": "Quartos duplos",
+    "valor": "R$ 299,00",
+    "data_internacao": "2016-03-01",
+    "data_alta": "",
+    "motivo_internacao": "Acompanhamento",
+    "medico_responsavel": "SP00003",
+    "enfermeiro_responsavel": "Enfermeiro 2",
+    "paciente_id": 1
+  },
+  {
+    "id_internacao": 4,
+    "tipo_de_quarto": "Apartamento",
+    "valor": "R$ 499,00",
+    "data_internacao": "2017-03-15",
+    "data_alta": "",
+    "motivo_internacao": "Tratamento intensivo",
+    "medico_responsavel": "SP00002",
+    "enfermeiro_responsavel": "Enfermeiro 1",
+    "enfermeiro_responsavel2": "Enfermeiro 3",
+    "paciente_id": 2
+  },
+  {
+    "id_internacao": 5,
+    "tipo_de_quarto": "Enfermaria",
+    "valor": "Gratuito",
+    "data_internacao": "2018-04-10",
+    "data_alta": "",
+    "motivo_internacao": "Recuperação pós-operatória",
+    "medico_responsavel": "SP00005",
+    "enfermeiro_responsavel": "Enfermeiro 4",
+    "enfermeiro_responsavel2": "",
+    "paciente_id": 5
+  },
+  {
+    "id_internacao": 6,
+    "tipo_de_quarto": "Quartos duplos",
+    "valor": "R$ 299,00",
+    "data_internacao": "2019-05-20",
+    "data_alta": "",
+    "motivo_internacao": "Acompanhamento clínico",
+    "medico_responsavel": "SP00008",
+    "enfermeiro_responsavel": "Enfermeiro 6",
+    "enfermeiro_responsavel2": "Enfermeiro 7",
+    "paciente_id": 8
+  },
+  {
+    "id_internacao": 7,
+    "tipo_de_quarto": "Apartamento",
+    "valor": "R$ 499,00",
+    "data_internacao": "2020-06-05",
+    "data_alta": "",
+    "motivo_internacao": "Tratamento de infecção",
+    "medico_responsavel": "SP00010",
+    "enfermeiro_responsavel": "Enfermeiro 9",
+    "enfermeiro_responsavel2": "",
+    "paciente_id": 10
+  },
+  {
+    "id_internacao": 8,
+    "tipo_de_quarto": "Enfermaria",
+    "valor": "Gratuito",
+    "data_internacao": "2021-07-12",
+    "data_alta": "",
+    "motivo_internacao": "Observação médica",
+    "medico_responsavel": "SP00012",
+    "enfermeiro_responsavel": "Enfermeiro 2",
+    "enfermeiro_responsavel2": "Enfermeiro 5",
+    "paciente_id": 12
+  },
+  {
+    "id_internacao": 9,
+    "tipo_de_quarto": "Quartos duplos",
+    "valor": "R$ 299,00",
+    "data_internacao": "2021-08-18",
+    "data_alta": "",
+    "motivo_internacao": "Reabilitação",
+    "medico_responsavel": "SP00014",
+    "enfermeiro_responsavel": "Enfermeiro 8",
+    "enfermeiro_responsavel2": "",
+    "paciente_id": 14
+  },
+  {
+    "id_internacao": 10,
+    "tipo_de_quarto": "Apartamento",
+    "valor": "R$ 499,00",
+    "data_internacao": "2022-01-01",
+    "data_alta": "",
+    "motivo_internacao": "Tratamento de doença crônica",
+    "medico_responsavel": "SP00017",
+    "enfermeiro_responsavel": "Enfermeiro 10",
+    "enfermeiro_responsavel2": "Enfermeiro 3",
+    "paciente_id": 17
+  }
+]

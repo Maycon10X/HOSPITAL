@@ -1,0 +1,797 @@
+[
+  {
+    "_id_pac": 1,
+    "nome": "Fernando Oliveira",
+    "sexo": "Masculino",
+    "data_nascimento": "1985-08-10",
+    "endereco": {
+      "logradouro": "Rua das Mangueiras",
+      "numero": "85",
+      "bairro": "Vila Bela",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "123456-789"
+    },
+    "contato": {
+      "telefone": "112345678",
+      "email": "fernando.oliveira@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1197654321",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2026-06-14",
+      "CNPJ": "11111",
+      "carencia": 90
+    },
+    "documentos": {
+      "CPF": "56789321087",
+      "RG": "SP234567",
+      "SUS": "39485792847584"
+    },
+    "DadosMedicos": {
+      "alergias": "Asma",
+      "tiposanguinio": "A+",
+      "faz_uso_remedio": true,
+      "medicamento": "Fenoterol",
+      "DoencaCronica": "Asma"
+    }
+  },
+  {
+    "pac": 2,
+    "nome": "Aline Souza",
+    "sexo": "Feminino",
+    "data_nascimento": "1990-12-01",
+    "endereco": {
+      "logradouro": "Avenida das Palmeiras",
+      "numero": "712",
+      "bairro": "Jardim Azul",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "234567-890"
+    },
+    "contato": {
+      "telefone": "113456789",
+      "email": "aline.souza@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1198765432",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2025-11-30",
+      "CNPJ": "22222",
+      "carencia": 45
+    },
+    "documentos": {
+      "CPF": "67891234509",
+      "RG": "SP345678",
+      "SUS": "48392759834728"
+    },
+    "DadosMedicos": {
+      "alergias": "Tetraciclina",
+      "tiposanguinio": "O-",
+      "faz_uso_remedio": false,
+      "medicamento": "",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 3,
+    "nome": "Marcelo Ramos",
+    "sexo": "Masculino",
+    "data_nascimento": "1982-03-25",
+    "endereco": {
+      "logradouro": "Rua das Orquídeas",
+      "numero": "630",
+      "bairro": "Vila Bonita",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "345678-901"
+    },
+    "contato": {
+      "telefone": "119765432",
+      "email": "marcelo.ramos@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1195432167",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-09-20",
+      "CNPJ": "11111",
+      "carencia": 30
+    },
+    "documentos": {
+      "CPF": "91023456789",
+      "RG": "SP987654",
+      "SUS": "59483920739485"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "B+",
+      "faz_uso_remedio": false,
+      "medicamento": null,
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 4,
+    "nome": "Juliana Santos",
+    "sexo": "Feminino",
+    "data_nascimento": "1998-07-14",
+    "endereco": {
+      "logradouro": "Rua das Azaleias",
+      "numero": "120",
+      "bairro": "Jardim Esperança",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "987654-321"
+    },
+    "contato": {
+      "telefone": "114567890",
+      "email": "juliana.santos@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1198763214",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-04-10",
+      "CNPJ": "22222",
+      "carencia": 60
+    },
+    "documentos": {
+      "CPF": "43210987654",
+      "RG": "SP876543",
+      "SUS": "69384592837462"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "O+",
+      "faz_uso_remedio": true,
+      "medicamento": "Furosemida",
+      "DoencaCronica": "Hipertenção"
+    }
+  },
+  {
+    "pac": 5,
+    "nome": "Patrícia Mendes",
+    "sexo": "Feminino",
+    "data_nascimento": "1977-01-30",
+    "endereco": {
+      "logradouro": "Rua das Acácias",
+      "numero": "45",
+      "bairro": "Parque Verde",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "876543-210"
+    },
+    "contato": {
+      "telefone": "116543789",
+      "email": "patricia.mendes@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1195432187",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-10-05",
+      "CNPJ": "11111",
+      "carencia": 40
+    },
+    "documentos": {
+      "CPF": "56789012345",
+      "RG": "SP567890",
+      "SUS": "48293750938475"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "A-",
+      "faz_uso_remedio": false,
+      "medicamento": null,
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 6,
+    "nome": "Renato Vieira",
+    "sexo": "Masculino",
+    "data_nascimento": "1989-11-11",
+    "endereco": {
+      "logradouro": "Avenida Central",
+      "numero": "500",
+      "bairro": "Centro Norte",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "345123-876"
+    },
+    "contato": {
+      "telefone": "115678234",
+      "email": "renato.vieira@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1192345678",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-07-25",
+      "CNPJ": "22222",
+      "carencia": 20
+    },
+    "documentos": {
+      "CPF": "23456789012",
+      "RG": "SP234561",
+      "SUS": "48927394589372"
+    },
+    "DadosMedicos": {
+      "alergias": null,
+      "tiposanguinio": "AB-",
+      "faz_uso_remedio": false,
+      "medicamento": null
+    }
+  },
+  {
+    "pac": 7,
+    "nome": "Gabriela Nunes",
+    "sexo": "Feminino",
+    "data_nascimento": "1995-04-20",
+    "endereco": {
+      "logradouro": "Rua das Violetas",
+      "numero": "76",
+      "bairro": "Jardim das Estrelas",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "567891-234"
+    },
+    "contato": {
+      "telefone": "116789432",
+      "email": "gabriela.nunes@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11987654321",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-02-15",
+      "CNPJ": "22222",
+      "carencia": 60
+    },
+    "documentos": {
+      "CPF": "12345678909",
+      "RG": "SP123987",
+      "SUS": "58392058392058"
+    },
+    "DadosMedicos": {
+      "alergias": "Penicilina",
+      "tiposanguinio": "O+",
+      "faz_uso_remedio": true,
+      "medicamento": "Amoxicilina",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 8,
+    "nome": "Lucas Pereira",
+    "sexo": "Masculino",
+    "data_nascimento": "1983-09-05",
+    "endereco": {
+      "logradouro": "Avenida das Águas",
+      "numero": "101",
+      "bairro": "Vila Esperança",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "678912-345"
+    },
+    "contato": {
+      "telefone": "115678321",
+      "email": "lucas.pereira@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11954321678",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-08-20",
+      "CNPJ": "11111",
+      "carencia": 45
+    },
+    "documentos": {
+      "CPF": "89012345698",
+      "RG": "SP345621",
+      "SUS": "49832750928375"
+    },
+    "DadosMedicos": {
+      "alergias": "Glúten",
+      "tiposanguinio": "AB+",
+      "faz_uso_remedio": true,
+      "medicamento": "Ranitidina"
+    }
+  },
+  {
+    "pac": 9,
+    "nome": "Vanessa Carvalho",
+    "sexo": "Feminino",
+    "data_nascimento": "1978-01-02",
+    "endereco": {
+      "logradouro": "Rua das Primaveras",
+      "numero": "18",
+      "bairro": "Jardim Lindo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "789123-456"
+    },
+    "contato": {
+      "telefone": "112345678",
+      "email": "vanessa.carvalho@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11987654329",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2025-12-12",
+      "CNPJ": "22222",
+      "carencia": 30
+    },
+    "documentos": {
+      "CPF": "56789123409",
+      "RG": "SP654321",
+      "SUS": "49375029485739"
+    },
+    "DadosMedicos": {
+      "alergias": "Lactose",
+      "tiposanguinio": "A+",
+      "faz_uso_remedio": true,
+      "medicamento": "Lacday",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 10,
+    "nome": "Rodrigo Almeida",
+    "sexo": "Masculino",
+    "data_nascimento": "1990-06-18",
+    "endereco": {
+      "logradouro": "Avenida das Pedras",
+      "numero": "300",
+      "bairro": "Vila das Flores",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "567893-210"
+    },
+    "contato": {
+      "telefone": "113456789",
+      "email": "rodrigo.almeida@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11976543211",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2026-01-05",
+      "CNPJ": "11111",
+      "carencia": 40
+    },
+    "documentos": {
+      "CPF": "89012345676",
+      "RG": "SP987654",
+      "SUS": "58392750939485"
+    },
+    "DadosMedicos": {
+      "alergias": "Sulfa",
+      "tiposanguinio": "O-",
+      "faz_uso_remedio": true,
+      "medicamento": "Ibuprofeno"
+    }
+  },
+  {
+    "pac": 11,
+    "nome": "Luana Fonseca",
+    "sexo": "Feminino",
+    "data_nascimento": "1986-12-12",
+    "endereco": {
+      "logradouro": "Rua das Margaridas",
+      "numero": "92",
+      "bairro": "Parque Feliz",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "678921-234"
+    },
+    "contato": {
+      "telefone": "11954321678",
+      "email": "luana.fonseca@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "11987654311",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2025-11-22",
+      "CNPJ": "22222",
+      "carencia": 50
+    },
+    "documentos": {
+      "CPF": "12345678987",
+      "RG": "SP456789",
+      "SUS": "58392508372049"
+    },
+    "DadosMedicos": {
+      "alergias": "Ácaros",
+      "tiposanguinio": "O+",
+      "faz_uso_remedio": true,
+      "medicamento": "Cetirizina"
+    }
+  },
+  {
+    "pac": 12,
+    "nome": "Eduardo Cardoso",
+    "sexo": "Masculino",
+    "data_nascimento": "1988-02-15",
+    "endereco": {
+      "logradouro": "Rua dos Jacarandás",
+      "numero": "210",
+      "bairro": "Vila Primavera",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "123450-001"
+    },
+    "contato": {
+      "telefone": "119876501",
+      "email": "eduardo.cardoso@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "119876522",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-08-10",
+      "CNPJ": "22222",
+      "carencia": 60
+    },
+    "documentos": {
+      "CPF": "12345678901",
+      "RG": "SP987001",
+      "SUS": "12345678900123"
+    },
+    "DadosMedicos": {
+      "alergias": "Cafeína",
+      "tiposanguinio": "B+",
+      "faz_uso_remedio": false,
+      "medicamento": "insulina",
+      "DoencaCronica": "Diabetes"
+    }
+  },
+  {
+    "pac": 13,
+    "nome": "Marcos Pereira",
+    "sexo": "Masculino",
+    "data_nascimento": "1975-06-30",
+    "endereco": {
+      "logradouro": "Avenida Brasil",
+      "numero": "340",
+      "bairro": "Jardim América",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "223450-002"
+    },
+    "contato": {
+      "telefone": "1191234560",
+      "email": "marcos.pereira@hotmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1191234561",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-11-30",
+      "CNPJ": "11111",
+      "carencia": 30
+    },
+    "documentos": {
+      "CPF": "23456789012",
+      "RG": "SP123987",
+      "SUS": "23456789012345"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "A-",
+      "faz_uso_remedio": true,
+      "medicamento": "Paracetamol",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 14,
+    "nome": "Fernanda Moreira",
+    "sexo": "Feminino",
+    "data_nascimento": "1992-10-09",
+    "endereco": {
+      "logradouro": "Rua das Begônias",
+      "numero": "56",
+      "bairro": "Bairro Novo",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "334450-003"
+    },
+    "contato": {
+      "telefone": "1192345678",
+      "email": "fernanda.moreira@yahoo.com"
+    },
+    "subcontato01": {
+      "telefone": "1192345679",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-03-20",
+      "CNPJ": "22222",
+      "carencia": 45
+    },
+    "documentos": {
+      "CPF": "34567890123",
+      "RG": "SP654321",
+      "SUS": "34567890123456"
+    },
+    "DadosMedicos": {
+      "alergias": "Frutos do mar",
+      "tiposanguinio": "AB+",
+      "faz_uso_remedio": false,
+      "medicamento": null,
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 15,
+    "nome": "Cláudia Mendes",
+    "sexo": "Feminino",
+    "data_nascimento": "1981-04-20",
+    "endereco": {
+      "logradouro": "Avenida Paulista",
+      "numero": "1500",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "445560-004"
+    },
+    "contato": {
+      "telefone": "1193456789",
+      "email": "claudia.mendes@outlook.com"
+    },
+    "subcontato01": {
+      "telefone": "1193456790",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-09-15",
+      "CNPJ": "11111",
+      "carencia": 40
+    },
+    "documentos": {
+      "CPF": "45678901234",
+      "RG": "SP321654",
+      "SUS": "45678901234567"
+    },
+    "dados_medicos": {
+      "alergias": "Chocolate",
+      "tiposanguinio": "B+",
+      "faz_uso_remedio": true,
+      "medicamento": "Cetirizina",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 16,
+    "nome": "Gabriel Costa",
+    "sexo": "Masculino",
+    "data_nascimento": "1997-12-05",
+    "endereco": {
+      "logradouro": "Rua Joaquim Nabuco",
+      "numero": "80",
+      "bairro": "Liberdade",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "556670-005"
+    },
+    "contato": {
+      "telefone": "1194567890",
+      "email": "gabriel.costa@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1194567891",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-05-25",
+      "CNPJ": "22222",
+      "carencia": 60
+    },
+    "documentos": {
+      "CPF": "56789012345",
+      "RG": "SP456789",
+      "SUS": "56789012345678"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "A+",
+      "faz_uso_remedio": false,
+      "medicamento": null,
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 17,
+    "nome": "Patrícia Rodrigues",
+    "sexo": "Feminino",
+    "data_nascimento": "1980-07-17",
+    "endereco": {
+      "logradouro": "Rua Tupiniquim",
+      "numero": "75",
+      "bairro": "Moema",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "667780-006"
+    },
+    "contato": {
+      "telefone": "1195678901",
+      "email": "patricia.rodrigues@bol.com.br"
+    },
+    "subcontato01": {
+      "telefone": "1195678902",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-08-30",
+      "CNPJ": "11111",
+      "carencia": 30
+    },
+    "documentos": {
+      "CPF": "67890123456",
+      "RG": "SP567890",
+      "SUS": "67890123456789"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "AB-",
+      "faz_uso_remedio": true,
+      "medicamento": "Omeprazol",
+      "DoencaCronica": "Nenhuma"
+    }
+  },
+  {
+    "pac": 18,
+    "nome": "Vinícius Teixeira",
+    "sexo": "Masculino",
+    "data_nascimento": "1994-11-11",
+    "endereco": {
+      "logradouro": "Avenida Faria Lima",
+      "numero": "360",
+      "bairro": "Itaim Bibi",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "778890-007"
+    },
+    "contato": {
+      "telefone": "1196789012",
+      "email": "vinicius.teixeira@hotmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1196789013",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-04-12",
+      "CNPJ": "22222",
+      "carencia": 45
+    },
+    "documentos": {
+      "CPF": "78901234567",
+      "RG": "SP678901",
+      "SUS": "78901234567890"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "O+",
+      "faz_uso_remedio": false,
+      "medicamento": null
+    }
+  },
+  {
+    "pac": 19,
+    "nome": "Celso Ramos",
+    "sexo": "Masculino",
+    "data_nascimento": "1979-05-23",
+    "endereco": {
+      "logradouro": "Rua Barão de Itapetininga",
+      "numero": "500",
+      "bairro": "Santana",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "889900-008"
+    },
+    "contato": {
+      "telefone": "1197890123",
+      "email": "celso.ramos@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1197890124",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Bradesco Seguro",
+      "validade": "2025-10-10",
+      "CNPJ": "11111",
+      "carencia": 40
+    },
+    "documentos": {
+      "CPF": "89012345678",
+      "RG": "SP789012",
+      "SUS": "89012345678901"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "A+",
+      "faz_uso_remedio": true,
+      "medicamento": "Losartana",
+      "DoencaCronica": "Hipertensão"
+    }
+  },
+  {
+    "pac": 20,
+    "nome": "Simone Albuquerque",
+    "sexo": "Feminino",
+    "data_nascimento": "1996-03-03",
+    "endereco": {
+      "logradouro": "Avenida Ibirapuera",
+      "numero": "230",
+      "bairro": "Indianópolis",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "CEP": "990011-009"
+    },
+    "contato": {
+      "telefone": "1198901234",
+      "email": "simone.albuquerque@gmail.com"
+    },
+    "subcontato01": {
+      "telefone": "1198901235",
+      "whatssapp": true
+    },
+    "convenio": {
+      "nome": "Amil Saúde",
+      "validade": "2026-09-01",
+      "CNPJ": "22222",
+      "carencia": 50
+    },
+    "documentos": {
+      "CPF": "90123456789",
+      "RG": "SP890123",
+      "SUS": "90123456789012"
+    },
+    "DadosMedicos": {
+      "alergias": "Nenhuma",
+      "tiposanguinio": "B-",
+      "faz_uso_remedio": false,
+      "medicamento": null,
+      "DoencaCronica": "Nenhuma"
+    }
+  }
+]
