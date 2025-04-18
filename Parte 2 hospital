@@ -1,0 +1,13 @@
+{
+    "id_internacao": 1,
+    "tipo_de_quarto": "Apartamento",
+    "valor": "R$ 499,00",
+    "data_internacao": "2015-01-01",
+    "data_previsao_alta": "2015-01-10",
+    "data_alta": "2015-01-12",
+    "motivo_internacao": "Pós cirurgia",
+    "medico_responsavel": "SP00007",
+    "enfermeiro_responsavel": "Enfermeiro 1",
+    "enfermeiro_responsavel2": "Enfermeiro 2",
+    "paciente_id": 4
+  },
