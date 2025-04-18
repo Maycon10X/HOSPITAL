@@ -1,0 +1,786 @@
+Professoir confesso que peguei da IA                                          Atividade Hospital Geral
+
+Parte1, Pronta
+Parte2, Pronta
+Parte3, Pronta
+Parte4, Pronta - Feita diretamente no Intellij
+Parte5
+_______________________________________________________________________________________________________________________
+Parte5-
+Crie um script e nele inclua consultas que retornem:
+
+1. Todos os dados e o valor médio das consultas do ano de 2020 e das que foram feitas sob convênio.
+
+```js
+db.consultas.aggregate([
+  {
+    $match: {
+      data: { $regex: "^2020" } // Filtro para consultas com datas começando em "2020"
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      totalValor: { $sum: { $toDouble: "$convenio.valor" } }, // Soma de todos os valores
+      quantidade: { $sum: 1 } // Conta o número de consultas
+    }
+  },
+  {
+    $project: {
+      valorMedio: { $divide: ["$totalValor", "$quantidade"] } // Calcula a média
+    }
+  }
+]);
+// <$match - Filtro de Ano de 2020:
+
+  Aqui estamos procurando consultas onde o campo data comece com "2020".
+
+  O operador $regex é usado para identificar strings que correspondem a um padrão específico.
+
+  ^2020 significa "string que começa com 2020".
+
+  $group - Agrupamento e Cálculos:
+
+  <_id: null significa que todos os dados serão agrupados em um único resultado (não agrupamos por categorias específicas).
+
+  totalValor: Calcula a soma dos valores dos convênios usando $sum e converte o campo convenio.valor de string para número com $toDouble.
+
+  quantidade: Conta quantas consultas existem com $sum: 1.
+
+  <$project - Cálculo da Média:
+
+  Criamos o campo valorMedio, que é a divisão do totalValor pela quantidade (somente se houver pelo menos uma consulta).
+```
+// CONSULTA 1 - Dados e valor médio das consultas de 2020 e sob convênio
+
+
+```js
+Todas as Consultas são pagas
+```
+
+2. Todos os dados das internações que tiveram data de alta maior que a data prevista para a alta.
+Q:
+```js
+db.Internacoes.find({
+  $expr: { $gt: ["$data_alta", "$data_prevista_alta"] }
+});
+````
+R: _id: ObjectId('6802ae96deea5db97db73522'),
+    id_internacao: 1,
+    tipo_de_quarto: 'Apartamento',
+    valor: 'R$ 499,00',
+    data_internacao: '2015-01-01',
+    data_previsao_alta: '2015-01-10',
+    data_alta: '2015-01-12',
+    motivo_internacao: 'Pós cirurgia',
+    medico_responsavel: 'SP00007',
+    enfermeiro_responsavel: 'Enfermeiro 1',
+    enfermeiro_responsavel2: 'Enfermeiro 2',
+    paciente_id: 4
+  }
+  {
+    _id: ObjectId('6802ae96deea5db97db73523'),
+    id_internacao: 2,
+    tipo_de_quarto: 'Enfermaria',
+    valor: 'Gratuito',
+    data_internacao: '2016-02-01',
+    data_previsao_alta: '2016-02-05',
+    data_alta: '2016-02-04',
+    motivo_internacao: 'Acompanhamento',
+    medico_responsavel: 'SP00001',
+    enfermeiro_responsavel: 'Enfermeiro 2',
+    enfermeiro_responsavel2: 'Enfermeiro 3',
+    paciente_id: 1
+  }
+  _id: ObjectId('6802ae96deea5db97db73524'),
+    id_internacao: 3,
+    tipo_de_quarto: 'Quartos duplos',
+    valor: 'R$ 299,00',
+    data_internacao: '2016-03-01',
+    data_previsao_alta: '2016-03-07',
+    data_alta: '2016-03-09',
+    motivo_internacao: 'Acompanhamento',
+    medico_responsavel: 'SP00003',
+    enfermeiro_responsavel: 'Enfermeiro 2',
+    enfermeiro_responsavel2: 'Enfermeiro 4',
+    paciente_id: 1
+  }
+
+3. Receituário completo da primeira consulta registrada com receituário associado.
+R: _id_consulta: '2',
+    data: '2016-03-15',
+    hora: '14:00',
+    motivoConsulta: 'Febre persistente',
+    diagnostico: 'Infecção viral',
+    observacoes: {
+      tratamento: {
+        medicamento: [
+          'Paracetamol',
+          'Vitamina C'
+        ],
+        doses: [
+          '500mg, 3x ao dia',
+          '1g, 1x ao dia'
+        ]
+      }
+    }
+  }
+  Q:
+```js
+db.consultas.findOne(
+  { "observacoes.tratamento.medicamento": { $exists: true } },
+  {
+    _id_consulta: 1,
+    data: 1,
+    hora: 1,
+    motivoConsulta: 1,
+    diagnostico: 1,
+    "observacoes.tratamento.medicamento": 1,
+    "observacoes.tratamento.doses": 1
+  }
+);
+```
+4. Todos os dados da consulta de maior valor e também da de menor valor (ambas as consultas não foram realizadas sob convênio).
+R: Consulta de maior valor
+   _id: ObjectId('68006c3dd942d3617c410045'),
+    _id_medico: 'SP00003',
+    _id_pac: 3,
+    _id_consulta: '3',
+    convenio: {
+      Nome: 'Bradesco Seguro',
+      CNPJ: '11111',
+      validade: '2025-09-20',
+      carencia: 30,
+      valor: '180.00'
+    },
+    data: '2017-07-20',
+    hora: '09:00',
+    local: 'Sala 303',
+    motivoConsulta: 'Dor nas costas',
+    diagnostico: 'Hérnia de disco',
+    tratamento: 'Fisioterapia e analgésicos',
+    DadosPaciente: {
+      'data_mediçao': '2017-07-20',
+      peso: '85kg',
+      altura: '1.80m',
+      pressao_arterial: '130/85',
+      temperatura: '36.7°C',
+      frequencia_cardiaca: '75 bpm'
+    },
+    observacoes: {
+      diagnostico: 'Paciente apresenta sinais de hérnia de disco lombar.',
+      tratamento: {
+        medicamento: [
+          'Ibuprofeno',
+          'Diazepam'
+        ],
+        doses: [
+          '600mg, 2x ao dia',
+          '5mg, 1x ao dia'
+        ]
+      }
+    },
+    valorConvertido: 180
+  },
+R2: Consulta maior valor
+maiorValorConsulta: {
+    _id: ObjectId('68006c3dd942d3617c41004d'),
+    _id_medico: 'SP00016',
+    _id_pac: 12,
+    _id_consulta: '11',
+    convenio: {
+      Nome: 'Amil Saúde',
+      CNPJ: '22222',
+      validade: '2026-08-10',
+      carencia: 60,
+      valor: '250.00'
+    },
+    data: '2019-12-25',
+    hora: '14:00',
+    local: 'Sala 111',
+    motivoConsulta: 'Glicemia elevada',
+    diagnostico: 'Diabetes tipo 2',
+    tratamento: 'Controle glicêmico e insulina',
+    DadosPaciente: {
+      'data_mediçao': '2019-12-25',
+      peso: '80kg',
+      altura: '1.78m',
+      pressao_arterial: '130/85',
+      temperatura: '36.7°C',
+      frequencia_cardiaca: '76 bpm'
+    },
+    observacoes: {
+      diagnostico: 'Paciente apresenta sinais de diabetes tipo 2.',
+      tratamento: {
+        medicamento: 'Insulina',
+        doses: 'Conforme prescrição médica'
+      }
+    },
+    valorConvertido: 250
+  }
+}
+Q:
+```js
+db.consultas.aggregate([
+  {
+    $addFields: {
+      valorConvertido: { $toDouble: "$convenio.valor" } // Convertendo valor para número
+    }
+  },
+  {
+    $sort: { valorConvertido: 1 } // Ordenando pelo valor (menor para maior)
+  },
+  {
+    $group: {
+      _id: null,
+      menorValorConsulta: { $first: "$$ROOT" }, // Pegando o primeiro documento (menor valor)
+      maiorValorConsulta: { $last: "$$ROOT" }   // Pegando o último documento (maior valor)
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      menorValorConsulta: 1,
+      maiorValorConsulta: 1
+    }
+  }
+]);
+
+```
+
+5. Todos os dados das internações em seus respectivos quartos, calculando o total da internação a partir do valor de diária do quarto e o número de dias entre a entrada e a alta.
+R:{
+    id_internacao: 1,
+    tipo_de_quarto: 'Apartamento',
+    data_internacao: '2015-01-01',
+    data_alta: '2015-01-12',
+    motivo_internacao: 'Pós cirurgia',
+    medico_responsavel: 'SP00007',
+    enfermeiro_responsavel: 'Enfermeiro 1',
+    enfermeiro_responsavel2: 'Enfermeiro 2',
+    paciente_id: 4,
+    totalInternacao: 5489
+  }
+  {
+    id_internacao: 4,
+    tipo_de_quarto: 'Apartamento',
+    data_internacao: '2017-03-15',
+    data_alta: '2017-03-30',
+    motivo_internacao: 'Tratamento intensivo',
+    medico_responsavel: 'SP00002',
+    enfermeiro_responsavel: 'Enfermeiro 1',
+    enfermeiro_responsavel2: 'Enfermeiro 3',
+    paciente_id: 2,
+    totalInternacao: 7485
+    }
+{
+  id_internacao: 7,
+  tipo_de_quarto: 'Apartamento',
+  data_internacao: '2020-06-05',
+  data_alta: '2020-06-14',
+  motivo_internacao: 'Tratamento de infecção',
+  medico_responsavel: 'SP00010',
+  enfermeiro_responsavel: 'Enfermeiro 9',
+  enfermeiro_responsavel2: 'Enfermeiro 8',
+  paciente_id: 10,
+  totalInternacao: 4491
+  Q:
+```js
+db.Internacoes.aggregate([
+  {
+    $lookup: {
+      from: "quartos",
+      localField: "tipo_de_quarto",
+      foreignField: "Quarto_1",
+      as: "detalhesQuarto"
+    }
+  },
+  {
+    $unwind: "$detalhesQuarto"
+  },
+  {
+    $addFields: {
+      valorDiaria: {
+        $toDouble: {
+          $replaceAll: {
+            input: {
+              $substr: ["$detalhesQuarto.valor", 3, -1] // Remove os 3 primeiros caracteres ("R$ ")
+            },
+            find: ",",
+            replacement: "." // Substitui vírgula por ponto
+          }
+        }
+      },
+      diasInternacao: {
+        $subtract: [
+          { $dateFromString: { dateString: "$data_alta", format: "%Y-%m-%d" } },
+          { $dateFromString: { dateString: "$data_internacao", format: "%Y-%m-%d" } }
+        ]
+      }
+    }
+  },
+  {
+    $addFields: {
+      totalInternacao: {
+        $multiply: [
+          { $divide: ["$diasInternacao", 86400000] }, // Milissegundos para dias
+          "$valorDiaria"
+        ]
+      }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      id_internacao: 1,
+      tipo_de_quarto: 1,
+      data_internacao: 1,
+      data_alta: 1,
+      motivo_internacao: 1,
+      totalInternacao: 1,
+      medico_responsavel: 1,
+      enfermeiro_responsavel: 1,
+      enfermeiro_responsavel2: 1,
+      paciente_id: 1
+    }
+  }
+]);
+````
+6. Data, procedimento e número de quarto de internações em quartos do tipo “apartamento”.
+R:id_internacao: 1,
+    data_internacao: '2015-01-01',
+    data_alta: '2015-01-12',
+    motivo_internacao: 'Pós cirurgia'
+  }
+  {
+    id_internacao: 4,
+    data_internacao: '2017-03-15',
+    data_alta: '2017-03-30',
+    motivo_internacao: 'Tratamento intensivo'
+  }
+  {
+  id_internacao: 7,
+    data_internacao: '2020-06-05',
+    data_alta: '2020-06-14',
+    motivo_internacao: 'Tratamento de infecção'
+  }
+  {
+    id_internacao: 10,
+    data_internacao: '2022-01-01',
+    data_alta: '2022-01-12',
+    motivo_internacao: 'Tratamento de doença crônica'
+  }
+Q:
+```js
+  db.internacoes.find(
+  { tipo_de_quarto: "Apartamento" }, // Filtro para quartos do tipo "Apartamento"
+  {
+    _id: 0,
+    data_internacao: 1, // Data da internação
+    data_alta: 1,       // Data de alta
+    motivo_internacao: 1, // Motivo ou procedimento
+    id_internacao: 1    // Número da internação (número do quarto associado)
+  }
+);
+```
+// CONSULTA 6 - Internações em quartos tipo “apartamento” com data, procedimento e número do quarto
+R:{
+    id_internacao: 1,
+    data_internacao: '2015-01-01',
+    motivo_internacao: 'Pós cirurgia'
+  }
+  {
+    id_internacao: 4,
+    data_internacao: '2017-03-15',
+    motivo_internacao: 'Tratamento intensivo'
+  }
+{
+  id_internacao: 7,
+  data_internacao: '2020-06-05',
+  motivo_internacao: 'Tratamento de infecção'
+}
+{
+  id_internacao: 10,
+  data_internacao: '2022-01-01',
+  motivo_internacao: 'Tratamento de doença crônica'
+}
+```js
+db.internacoes.find(
+  { tipo_de_quarto: "Apartamento" }, // Filtro para quartos do tipo "Apartamento"
+  {
+    _id: 0,
+    data_internacao: 1, // Data de internação
+    motivo_internacao: 1, // Procedimento ou motivo da internação
+    id_internacao: 1 // Número associado à internação (quarto)
+  }
+);
+db.Internacoes.find(
+  { tipo_de_quarto: "Apartamento" }, // Filtro para quartos do tipo "Apartamento"
+  {
+    _id: 0,
+    data_internacao: 1, // Data de internação
+    motivo_internacao: 1, // Procedimento ou motivo da internação
+    id_internacao: 1 // Número associado à internação (quarto)
+  }
+);
+```
+
+7. Nome do paciente, data da consulta e especialidade de todas as consultas em que os pacientes eram menores de 18 anos na data da consulta e cuja especialidade não seja “pediatria”, ordenando por data de realização da consulta.
+R:
+Nao tem nenhum paciene com menos de 18 anos
+
+```js
+db.consultas.aggregate([
+  {
+    $addFields: {
+      idadeNaConsulta: {
+        $dateDiff: {
+          startDate: { $dateFromString: { dateString: "$DadosPaciente.data_nascimento", format: "%Y-%m-%d" } },
+          endDate: { $dateFromString: { dateString: "$data", format: "%Y-%m-%d" } },
+          unit: "year"
+        }
+      }
+    }
+  },
+  {
+    $match: {
+      idadeNaConsulta: { $lt: 18 }, // Menores de 18 anos
+      especialidade: { $ne: "pediatria" } // Especialidade diferente de pediatria
+    }
+  },
+  {
+    $sort: { data: 1 } // Ordenar por data da consulta (crescente)
+  },
+  {
+    $project: {
+      _id: 0,
+      "DadosPaciente.nome": 1, // Nome do paciente
+      data: 1,                // Data da consulta
+      especialidade: 1        // Especialidade
+    }
+  }
+]);
+
+8. Nome do paciente, nome do médico, data da internação e procedimentos das internações realizadas por médicos da especialidade “gastroenterologia”, que tenham acontecido em “enfermaria”.
+R: Sem internaçoes com essas datas especificas
+
+```js
+db.internacoes.aggregate([
+  // 1. Filtra internações realizadas em enfermaria
+  {
+    $match: {
+      tipo_de_quarto: "Enfermaria"
+    }
+  },
+  // 2. Junta com a coleção de médicos
+  {
+    $lookup: {
+      from: "medicos",
+      localField: "medico_responsavel",
+      foreignField: "_id_medico",
+      as: "medico_info"
+    }
+  },
+  {
+    $unwind: "$medico_info"
+  },
+  // 3. Filtra médicos cuja especialidade contenha "gastroenterologia" (case insensitive)
+  {
+    $match: {
+      "medico_info.especialidade": { $regex: "gastroenterologia", $options: "i" }
+    }
+  },
+  // 4. Junta com a coleção de pacientes
+  {
+    $lookup: {
+      from: "pacientes",
+      localField: "paciente_id",
+      foreignField: "_id_pac",
+      as: "paciente_info"
+    }
+  },
+  {
+    $unwind: "$paciente_info"
+  },
+  // 5. Projeta os campos desejados
+  {
+    $project: {
+      _id: 0,
+      nome_paciente: "$paciente_info.nome",
+      nome_medico: "$medico_info.nome",
+      data_internacao: 1,
+      procedimento: "$motivo_internacao"
+    }
+  },
+  // 6. Agrupa os resultados e conta os documentos
+  {
+    $facet: {
+      documentos: [ { $match: {} } ],    // Todos os documentos resultantes
+      totalDocumentos: [ { $count: "total" } ]  // Conta o total de documentos
+    }
+  }
+]);
+
+````
+
+9. Os nomes dos médicos, seus CRMs e a quantidade de consultas que cada um realizou.
+R:
+{
+  medicos: [
+    {
+      nome_medico: 'DR. Sofia Menezes',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DRA. Helena Ramos',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DRA. Camila Rocha',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DR. João De Almeida',
+      total_consultas: 2
+    },
+    {
+      nome_medico: 'DRA. Carolina Moura',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DR. Lucas Andrade',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DRA. Vanessa Imperatriz',
+      total_consultas: 2
+    },
+    {
+      nome_medico: 'DR. Marcos Aurélio',
+      total_consultas: 2
+    },
+    {
+      nome_medico: 'DR. Ricardo Vasconcelos',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DRA. Fernanda Azevedo',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DRA. Maria Clara Silva',
+      total_consultas: 2
+    },
+    {
+      nome_medico: 'DRA. Ana Beatriz',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DR. Felipe Costa',
+      total_consultas: 1
+    },
+    {
+      nome_medico: 'DR. Albert Einstein',
+      total_consultas: 1
+    }
+  ]
+}
+```js
+db.consultas.aggregate([
+  {
+    // Agrupa as consultas por médico contando quantas foram realizadas
+    $group: {
+      _id: "$_id_medico",
+      totalConsultas: { $sum: 1 }
+    }
+  },
+  {
+    // Junta com a coleção de médicos para recuperar os dados do médico
+    $lookup: {
+      from: "medicos",
+      localField: "_id",
+      foreignField: "_id_medico",
+      as: "medico_info"
+    }
+  },
+  {
+    // Garante que cada resultado tenha apenas um documento de médico
+    $unwind: "$medico_info"
+  },
+  {
+    // Projeta os campos desejados: nome do médico, CRM e total de consultas
+    $project: {
+      _id: 0,
+      nome_medico: "$medico_info.nome",
+      crm: "$medico_info.CRM",
+      total_consultas: "$totalConsultas"
+    }
+  },
+  {
+    // Agrupa todos os resultados em um array
+    $group: {
+      _id: null,
+      medicos: { $push: "$$ROOT" }
+    }
+  },
+  {
+    // Remove o _id final para deixar apenas o array
+    $project: {
+      _id: 0,
+      medicos: 1
+    }
+  }
+]);
+
+10. Todos os médicos que tenham "Gabriel" no nome.
+R:
+{
+      _id: ObjectId('68006c21d942d3617c410036'),
+      _id_medico: 'SP00007',
+      em_atividade: true,
+      nome: 'DR. Gabriel Alvez Borges',
+      sexo: 'Masculino',
+      data_nascimento: '1970-10-24',
+      especialidades: [
+        'Dermatologia',
+        'Radiologia',
+        'Clínica geral'
+      ],
+      tipo: 'Especialista',
+      contato: [
+        {
+          telefone: '11 92222-9067',
+          email: 'gabssaude@hospital.com'
+        }
+      ],
+      status_medico: 1,
+      documentos: {
+        cpf: '5667980235',
+        rg: '122544678',
+        digito: '9',
+        crm: 'SP00007'
+      },
+      plantao: [
+        {
+          dia: 'terça-feira',
+          entrada: '07:00',
+          saida: '15:00'
+        },
+        {
+          dia: 'quinta-feira',
+          entrada: '07:00',
+          saida: '15:00'
+        },
+        {
+          dia: 'sábado',
+          entrada: '07:00',
+          saida: '15:00'
+        }
+      ]
+    }
+  ]
+}
+```js
+db.medicos.aggregate([
+  {
+    $match: {
+      nome: { $regex: "Gabriel", $options: "i" }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      medicos: { $push: "$$ROOT" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      medicos: 1
+    }
+  }
+]);
+```
+
+11. Os nomes, CORENs e número de internações de enfermeiros que participaram de mais de uma internação.
+R:{
+    totalInternacoes: 2,
+    enfermeiro_id: '5',
+    nome: 'Fernanda Oliveira'
+    }
+    {
+      totalInternacoes: 2,
+      enfermeiro_id: '1',
+      nome: 'Mariana Gomes'
+    }
+    {
+      totalInternacoes: 4,
+      enfermeiro_id: '2',
+      nome: 'Carlos Silva'
+    }
+    {
+      totalInternacoes: 3,
+      enfermeiro_id: '3',
+      nome: 'Ana Paula Souza'
+    }
+    {
+      totalInternacoes: 2,
+      enfermeiro_id: '8',
+      nome: 'Gabriel Costa'
+    }
+    {
+       totalInternacoes: 2,
+       enfermeiro_id: '8',
+       nome: 'Gabriel Costa'
+     }
+     {
+       totalInternacoes: 2,
+       enfermeiro_id: '4',
+       nome: 'João Pedro Lima'
+     }
+Q:
+````js
+db.internacoes.aggregate([
+  {
+    $project: {
+      enfermeiros: {
+        $map: {
+          input: ["$enfermeiro_responsavel", "$enfermeiro_responsavel2"],
+          as: "enf",
+          in: {
+            $substrCP: [
+              "$$enf",
+              11,
+              { $subtract: [ { $strLenCP: "$$enf" }, 11 ] }
+            ]
+          }
+        }
+      }
+    }
+  },
+  { $unwind: "$enfermeiros" },
+  { $group: {
+      _id: "$enfermeiros",
+      totalInternacoes: { $sum: 1 }
+  }},
+  {
+    $lookup: {
+      from: "enfermeiros",
+      localField: "_id",
+      foreignField: "enfermeiro-id",
+      as: "detalhes"
+    }
+  },
+  {
+    $project: {
+      enfermeiro_id: "$_id",
+      totalInternacoes: 1,
+      nome: { $arrayElemAt: [ "$detalhes.Dados Pessoais.nome", 0 ] },
+      coren: { $arrayElemAt: [ "$detalhes.Docmentos.coren", 0 ] }
+    }
+  }
+])
+
+```
+---
+**Fim do Documento**
